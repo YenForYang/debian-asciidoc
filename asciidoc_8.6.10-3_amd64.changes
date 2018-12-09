@@ -1,0 +1,62 @@
+Format: 1.8
+Date: Tue, 17 Jul 2018 20:33:45 -0700
+Source: asciidoc
+Binary: asciidoc vim-asciidoc asciidoc-doc asciidoc-common asciidoc-base asciidoc-dblatex asciidoc-fop asciidoc-tests
+Built-For-Profiles: nobiarch nocheck
+Architecture: all
+Version: 8.6.10-3
+Distribution: unstable
+Urgency: low
+Maintainer: Joseph Herlant <aerostitch@debian.org>
+Changed-By: Joseph Herlant <herlantj@gmail.com>
+Description:
+ asciidoc   - Highly configurable text format for writing documentation
+ asciidoc-base - Minimal version of asciidoc not suitable for pdf
+ asciidoc-common - Basic data and configuration files for asciidoc
+ asciidoc-dblatex - Asciidoc package including dblatex dependencies
+ asciidoc-doc - Examples and documentation for asciidoc
+ asciidoc-fop - Asciidoc package including fop dependencies
+ asciidoc-tests - Test framework for asciidoc
+ vim-asciidoc - Vim syntax highlighting files for asciidoc
+Closes: 883821 903166
+Changes:
+ asciidoc (8.6.10-3) unstable; urgency=low
+ .
+   [ Raphaël Hertzog ]
+   * Revert "Fix git autocrlf mixup in source"
+ .
+   [ Joseph Herlant ]
+   * d/control: Set Vcs-* to salsa.debian.org
+   * Fix renaming of README causing FTBS (Closes: #903166, #883821)
+   * Bump standards to 4.1.5 and compat to 11
+   * d/copyright: fix insecure-copyright-format-uri
+Checksums-Sha1:
+ 8b638c5d424ca19ca31416ce383e898b0370e681 135276 asciidoc-base_8.6.10-3_all.deb
+ 8b9d620f6d456574be1e552c72c4497598227ed7 281988 asciidoc-common_8.6.10-3_all.deb
+ fd6f8be1c3ebdef184406e300f06b8c3719c0568 58840 asciidoc-dblatex_8.6.10-3_all.deb
+ 3e8b5d6e2744f4e1fd91f47da063c3c49db411f3 259968 asciidoc-doc_8.6.10-3_all.deb
+ 825b8d1cfd010ecacc5f10b3872faf6780f401f4 56996 asciidoc-fop_8.6.10-3_all.deb
+ 0acbd1c53f602bfad2afa5f6013c1725b95bfc35 79784 asciidoc-tests_8.6.10-3_all.deb
+ d3a5db5ac793cfbc4b7b11c27947f1ae067b80e7 57768 asciidoc_8.6.10-3_all.deb
+ 2a6541fa6d30e8effe3eeae54e05f2e95eceb0d9 7898 asciidoc_8.6.10-3_amd64.buildinfo
+ 65112c84fb71c240d8eb31a6f5f7f4cc07d9dcb2 60276 vim-asciidoc_8.6.10-3_all.deb
+Checksums-Sha256:
+ d1828a457feaa1a0e1b67910784a9423d941b09fbd5b63a5154f8d6ce0021a7c 135276 asciidoc-base_8.6.10-3_all.deb
+ e53286e4fb4ede7ff3af8ac3fa5fc8f227fa287f1dd5ffd101cfe6f97230f3f4 281988 asciidoc-common_8.6.10-3_all.deb
+ a0bd3c5f13e163d241986f4f70d165f8aea152ecd991a034de730c364714c87b 58840 asciidoc-dblatex_8.6.10-3_all.deb
+ 38a0e681f976abbc1b228a198aaf81508f48daf304d31c6a4ebec6f33cee3c9f 259968 asciidoc-doc_8.6.10-3_all.deb
+ 5c2bfeaab2042bf0ca0fe84620ce638f1d8d861e1dbeb109377b245cf2d84fa5 56996 asciidoc-fop_8.6.10-3_all.deb
+ 3c6673f33cac4b346a57f6d5269175acc08ce6166906fce111e7fc235e3413c7 79784 asciidoc-tests_8.6.10-3_all.deb
+ 12b20a470b81b3f284ba3050f65fba780c554af92220fa6c49233c94c9267578 57768 asciidoc_8.6.10-3_all.deb
+ 8a14f2ab9c5beb9a2ec47ecc4727e00224295cbcf72595c3fbeb93e3bb91c5b4 7898 asciidoc_8.6.10-3_amd64.buildinfo
+ 126dd04fc3a2e8f2af35279cb878944349e6ef171d99db42ad97078afe4fdaff 60276 vim-asciidoc_8.6.10-3_all.deb
+Files:
+ 2f365178f46b78ebed4a2f8c24e75961 135276 text optional asciidoc-base_8.6.10-3_all.deb
+ 478c597aaf35b844a9180d6fc775cab2 281988 text optional asciidoc-common_8.6.10-3_all.deb
+ 9132cd2223fc477c268d600f9e9b003a 58840 text optional asciidoc-dblatex_8.6.10-3_all.deb
+ 02206cf55156c9da5367f5c94fe1bf6e 259968 doc optional asciidoc-doc_8.6.10-3_all.deb
+ 34ff08fa47e5f21175525cd3f394e2ab 56996 text optional asciidoc-fop_8.6.10-3_all.deb
+ ba267e58583f6e96ec09b16338ebdca4 79784 text optional asciidoc-tests_8.6.10-3_all.deb
+ a24c6abca64f38a9e0219cfce7977076 57768 text optional asciidoc_8.6.10-3_all.deb
+ c2ecf8e59ece2365fa1f346eabef9656 7898 text optional asciidoc_8.6.10-3_amd64.buildinfo
+ 6017d784c4e914aead2daf0f41d114ec 60276 text optional vim-asciidoc_8.6.10-3_all.deb

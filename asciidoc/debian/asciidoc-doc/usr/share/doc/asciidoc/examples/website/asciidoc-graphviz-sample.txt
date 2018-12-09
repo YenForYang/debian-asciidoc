@@ -1,0 +1,1 @@
+/etc/asciidoc/filters/graphviz/asciidoc-graphviz-sample.txt

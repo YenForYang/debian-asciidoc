@@ -1,0 +1,6 @@
+config.log
+Makefile
+config.status
+debian/asciidoc.1.xml
+debian/testasciidoc.1.xml
+debian/a2x.1.xml

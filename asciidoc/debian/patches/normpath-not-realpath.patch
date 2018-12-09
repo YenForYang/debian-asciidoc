@@ -1,0 +1,13 @@
+Author: 
+Description: fixes a python bug with normpath
+--- a/asciidoc.py
++++ b/asciidoc.py
+@@ -252,7 +252,7 @@
+     else:
+         assert os.path.isdir(directory)
+         directory = os.path.realpath(directory)
+-    fname = os.path.realpath(fname)
++    fname = os.path.normpath(fname)
+     return os.path.commonprefix((directory, fname)) == directory
+ 
+ def safe():

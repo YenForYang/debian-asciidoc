@@ -1,0 +1,5 @@
+etc/asciidoc
+etc/asciidoc/docbook-xsl
+etc/asciidoc/filters
+etc/asciidoc/stylesheets
+usr/share/asciidoc

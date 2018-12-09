@@ -1,0 +1,19 @@
+ dpkg-buildpackage -D -us -uc -ui -b -Jauto -Pnobiarch,nocheck
+dpkg-buildpackage: info: source package asciidoc
+dpkg-buildpackage: info: source version 8.6.10-3
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Joseph Herlant <herlantj@gmail.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+dpkg-source: info: using options from asciidoc/debian/source/local-options: --unapply-patches
+dpkg-source: info: using patch list from debian/patches/series
+dpkg-source: info: applying normpath-not-realpath.patch
+dpkg-source: info: applying testasciidoc_path.patch
+dpkg-source: info: applying testasciidoc_usage.patch
+dpkg-source: info: applying fix_asciidoc_api_doc.patch
+dpkg-source: info: applying adding_testasciidoc_manpage.patch
+dpkg-source: info: applying vim-asciidoc-add_dummy_ftdetect.patch
+dpkg-source: info: applying 767179_speed_up_syntax_highlighting.patch
+dpkg-checkbuilddeps: error: Unmet build dependencies: xmlto
+dpkg-buildpackage: warning: build dependencies/conflicts unsatisfied; aborting
+dpkg-buildpackage: warning: (Use -d flag to override.)

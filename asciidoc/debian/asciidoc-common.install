@@ -1,0 +1,9 @@
+*.conf                  etc/asciidoc
+docbook-xsl             etc/asciidoc
+docbook-xsl/*.xsl       etc/asciidoc/docbook-xsl
+images                  usr/share/asciidoc
+images/icons            usr/share/asciidoc
+javascripts             usr/share/asciidoc
+stylesheets             etc/asciidoc
+stylesheets/*.css       etc/asciidoc/stylesheets
+themes                  etc/asciidoc

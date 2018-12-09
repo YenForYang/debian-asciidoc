@@ -1,0 +1,33 @@
+#!/usr/bin/make -f
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+#export DH_OPTIONS=-v
+
+%:
+	dh $@ --with python2
+
+override_dh_install:
+	dh_install \
+		-X debian/asciidoc/usr/bin/a2x \
+		-X debian/asciidoc/usr/bin/a2x.py \
+		-X debian/asciidoc/usr/bin/asciidoc.py \
+		-X debian/asciidoc/usr/bin/asciidoc
+	install -m0755 a2x.py debian/asciidoc-base/usr/bin/a2x
+	install -m0755 asciidoc.py debian/asciidoc-base/usr/bin/asciidoc
+	install -m0755 tests/testasciidoc.py debian/asciidoc-tests/usr/bin/testasciidoc
+	cp -a examples/website/ debian/asciidoc-doc/usr/share/doc/asciidoc/examples/
+	install -m0644 CHANGELOG.txt debian/asciidoc-doc/usr/share/doc/asciidoc/examples/website/CHANGELOG.txt
+	install -m0644 INSTALL.txt debian/asciidoc-doc/usr/share/doc/asciidoc/examples/website/INSTALL.txt
+	install -m0644 README.asciidoc debian/asciidoc-doc/usr/share/doc/asciidoc/examples/website/README.asciidoc
+	cp -a doc/ debian/asciidoc-doc/usr/share/doc/asciidoc/
+	rm debian/asciidoc-doc/usr/share/doc/asciidoc/doc/*.1
+	./asciidoc.py  -b xhtml11 -a iconsdir=/usr/share/asciidoc/images/icons \
+		-a footer-style=none \
+		-o debian/asciidoc-doc/usr/share/doc/asciidoc/userguide.html doc/asciidoc.txt
+
+override_dh_link:
+	rm -rf debian/asciidoc-common/usr/share/asciidoc/images/icons
+	dh_link
+
+override_dh_compress:
+	dh_compress -X.txt

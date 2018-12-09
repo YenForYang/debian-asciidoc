@@ -1,0 +1,7 @@
+./asciidocapi.py
+./filters/code
+./filters/graphviz
+./filters/latex
+./filters/music
+./filters/source
+./filters/unwraplatex.py

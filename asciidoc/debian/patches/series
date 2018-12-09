@@ -1,0 +1,7 @@
+normpath-not-realpath.patch
+testasciidoc_path.patch
+testasciidoc_usage.patch
+fix_asciidoc_api_doc.patch
+adding_testasciidoc_manpage.patch
+vim-asciidoc-add_dummy_ftdetect.patch
+767179_speed_up_syntax_highlighting.patch

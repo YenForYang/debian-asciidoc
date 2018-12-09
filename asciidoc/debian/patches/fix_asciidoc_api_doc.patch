@@ -1,0 +1,51 @@
+Author: Alexander Wirt <formorer@debian.org>
+Description: Fix some import issues in the asciidoc API
+--- a/asciidocapi.py
++++ b/asciidocapi.py
+@@ -5,6 +5,8 @@
+ The AsciiDocAPI class provides an API for executing asciidoc. Minimal example
+ compiles `mydoc.txt` to `mydoc.html`:
+ 
++  import sys
++  sys.path.append("/usr/share/asciidoc")
+   import asciidocapi
+   asciidoc = asciidocapi.AsciiDocAPI()
+   asciidoc.execute('mydoc.txt')
+@@ -17,6 +19,8 @@
+ 1. Check execution:
+ 
+    >>> import StringIO
++   >>> import sys
++   >>> sys.path.append("/usr/share/asciidoc")
+    >>> infile = StringIO.StringIO('Hello *{author}*')
+    >>> outfile = StringIO.StringIO()
+    >>> asciidoc = AsciiDocAPI()
+@@ -36,6 +40,8 @@
+ 2. Check error handling:
+ 
+    >>> import StringIO
++   >>> import sys
++   >>> sys.path.append("/usr/share/asciidoc")
+    >>> asciidoc = AsciiDocAPI()
+    >>> infile = StringIO.StringIO('---------')
+    >>> outfile = StringIO.StringIO()
+--- a/doc/asciidocapi.txt
++++ b/doc/asciidocapi.txt
+@@ -44,6 +44,8 @@
+ 
+ [source,python]
+ -------------------------------------------------------------------------------
++import sys
++sys.path.append("/usr/share/asciidoc")
+ from asciidocapi import AsciiDocAPI
+ asciidoc = AsciiDocAPI()
+ asciidoc.execute('mydoc.txt')
+@@ -57,6 +59,8 @@
+ [GCC 4.2.3 (Ubuntu 4.2.3-2ubuntu7)] on linux2
+ Type "help", "copyright", "credits" or "license" for more information.
+ >>> from asciidocapi import AsciiDocAPI
++>>> import sys
++>>> sys.path.append("/usr/share/asciidoc")
+ >>> import StringIO
+ >>> infile = StringIO.StringIO('Hello *{author}*')
+ >>> outfile = StringIO.StringIO()

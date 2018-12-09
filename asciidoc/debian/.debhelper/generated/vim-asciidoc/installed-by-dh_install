@@ -1,0 +1,3 @@
+./debian/asciidoc.yaml
+./vim/ftdetect/asciidoc.vim
+./vim/syntax/asciidoc.vim

@@ -1,0 +1,30 @@
+Author: Alexander Wirt <formorer@debian.org>
+Description: remove .py extension for usage and tell it where the conf is
+--- a/tests/testasciidoc.py
++++ b/tests/testasciidoc.py
+@@ -1,6 +1,6 @@
+ #!/usr/bin/env python
+ 
+-USAGE = '''Usage: testasciidoc.py [OPTIONS] COMMAND
++USAGE = '''Usage: testasciidoc [OPTIONS] COMMAND
+ 
+ Run AsciiDoc conformance tests specified in configuration FILE.
+ 
+@@ -12,7 +12,7 @@
+ Options:
+   -f, --conf-file=CONF_FILE
+         Use configuration file CONF_FILE (default configuration file is
+-        testasciidoc.conf in testasciidoc.py directory)
++        /etc/asciidoc/testasciidoc.conf)
+   --force
+         Update all test data overwriting existing data'''
+ 
+@@ -409,7 +409,7 @@
+     if len(args) == 0:
+         usage()
+         sys.exit(1)
+-    conffile = os.path.join(os.path.dirname(sys.argv[0]), 'testasciidoc.conf')
++    conffile = '/etc/asciidoc/testasciidoc.conf'
+     force = False
+     for o,v in opts:
+         if o == '--force':

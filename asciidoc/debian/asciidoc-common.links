@@ -1,0 +1,4 @@
+etc/asciidoc/stylesheets usr/share/asciidoc/stylesheets
+usr/share/asciidoc/icons usr/share/asciidoc/images/icons
+usr/share/asciidoc/images etc/asciidoc/images
+usr/share/asciidoc/javascripts etc/asciidoc/javascripts

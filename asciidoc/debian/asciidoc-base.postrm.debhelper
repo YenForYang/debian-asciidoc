@@ -1,0 +1,3 @@
+# Automatically added by dh_installdeb/11.5.3
+dpkg-maintscript-helper rm_conffile /etc/asciidoc/filters/latex/latex2png.py 8.6.10-2\~ -- "$@"
+# End automatically added section

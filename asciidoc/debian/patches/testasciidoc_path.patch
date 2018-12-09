@@ -1,0 +1,13 @@
+Author: Alexander Wirt <formorer@debian.org>
+Description: Help testasciidoc to find its libs
+--- a/tests/testasciidoc.py
++++ b/tests/testasciidoc.py
+@@ -24,6 +24,8 @@
+ import os, sys, re, difflib
+ import time
+ 
++sys.path.append('/usr/share/asciidoc/')
++
+ if sys.platform[:4] == 'java':
+     # Jython cStringIO is more compatible with CPython StringIO.
+     import cStringIO as StringIO

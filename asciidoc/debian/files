@@ -1,0 +1,9 @@
+asciidoc-base_8.6.10-3_all.deb text optional
+asciidoc-common_8.6.10-3_all.deb text optional
+asciidoc-dblatex_8.6.10-3_all.deb text optional
+asciidoc-doc_8.6.10-3_all.deb doc optional
+asciidoc-fop_8.6.10-3_all.deb text optional
+asciidoc-tests_8.6.10-3_all.deb text optional
+asciidoc_8.6.10-3_all.deb text optional
+asciidoc_8.6.10-3_amd64.buildinfo text optional
+vim-asciidoc_8.6.10-3_all.deb text optional

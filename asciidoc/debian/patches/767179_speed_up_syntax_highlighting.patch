@@ -1,0 +1,16 @@
+Description: Implement the solution proposed in #767179 to avoid some slowness
+ during the manipulation of big files with vim-asciidoc. Not forwarding as
+ upstream has officially stopped the development of this tool.
+Author: Joseph Herlant <herlantj@gmail.com>
+Forwarded: No
+--- a/vim/syntax/asciidoc.vim
++++ b/vim/syntax/asciidoc.vim
+@@ -23,8 +23,6 @@
+ endif
+ 
+ syn clear
+-syn sync fromstart
+-syn sync linebreaks=100
+ 
+ " Run :help syn-priority to review syntax matching priority.
+ syn keyword asciidocToDo TODO FIXME CHECK TEST XXX ZZZ DEPRECATED

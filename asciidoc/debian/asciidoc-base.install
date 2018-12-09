@@ -1,0 +1,2 @@
+asciidocapi.py usr/share/asciidoc
+filters/*      etc/asciidoc/filters

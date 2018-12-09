@@ -1,0 +1,12 @@
+This package provides the vim syntax highlighting for asciidoc,
+but it is not enabled by default.
+
+To enable it at user-level only, use:
+
+  vim-addon-manager install asciidoc
+
+To enable it system-wide, use:
+
+  sudo vim-addon-manager -w install asciidoc
+
+For more information about vim-addon-manager, check its manual page.

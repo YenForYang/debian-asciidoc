@@ -1,0 +1,24 @@
+asciidoc (8.6.10-1) unstable; urgency=low
+
+  The version 8.6.10 has been marked as FINAL RELEASE by the upstream maintainers.
+  They advise their users to move to asciidoctor.
+  See: https://github.com/asciidoc/asciidoc/releases
+
+ -- Joseph Herlant <herlantj@gmail.com>  Wed, 04 Oct 2017 14:03:22 -0700
+
+asciidoc (8.6.9-4) unstable; urgency=low
+
+  The asciidoc package has been split into several other packages to
+  bring more flexibility and to lower the dependencies for people using only
+  man pages and html files generation. (Closes: #692274, #637006)
+  The asciidoc binary package is now a meta package that brings
+  asciidoc-dblatex and others packages to keep the current behavior.
+
+ -- Joseph Herlant <herlantj@gmail.com>  Thu, 18 Sep 2014 12:08:07 +0200
+
+asciidoc (8.6.3-1) unstable; urgency=low
+
+  The docbook backend got renamed to docbook45. If you have any user modified docbook.conf
+  or ~/.asciidoc/docbook.conf rename them to docbook45.conf.
+
+ -- Alexander Wirt <formorer@debian.org>  Sat, 04 Dec 2010 09:56:46 +0100

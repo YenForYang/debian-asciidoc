@@ -1,0 +1,1 @@
+../../../../asciidoc/javascripts/asciidoc.js

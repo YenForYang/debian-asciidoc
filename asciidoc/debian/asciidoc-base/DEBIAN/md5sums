@@ -1,0 +1,9 @@
+c9a7e0c8825c2191a35658d2ef3db51e  usr/bin/a2x
+ecdbc8e4e9b3cf4ec872c0df021cfc26  usr/bin/asciidoc
+c8dadea0959111d76d967b9a4a37715e  usr/share/asciidoc/asciidocapi.py
+2ed1d3075d98413b4dc8dd04addd0d00  usr/share/doc/asciidoc-base/NEWS.Debian.gz
+14e01ae97dbfd588ef6b224439db41e6  usr/share/doc/asciidoc-base/changelog.Debian.gz
+d65ae78ea4f3dad03a66412136685bec  usr/share/doc/asciidoc-base/changelog.gz
+407532f92b309d1d16e50ed407b553ae  usr/share/doc/asciidoc-base/copyright
+771913ffe13d0bd2074eeb620b5a5d71  usr/share/man/man1/a2x.1.gz
+7013b27d2f7fc5d373bbec9ece659c78  usr/share/man/man1/asciidoc.1.gz
